@@ -1,43 +1,43 @@
-//sample1
-#include <iostream>
+//sample1 function
+//#include <iostream>
+//
+//extern "C"
+//{
+//#include "lua.h"
+//#include "lualib.h"
+//#include "lauxlib.h"
+//}
+//
+//
+//#include "lua_tinker.h"
+//
+//int cpp_func(int arg1, int arg2)
+//{
+//	return arg1 + arg2;
+//}
+//
+//int main()
+//{
+//	lua_State* L = lua_open();
+//
+//	luaopen_base(L);
+//
+//	lua_tinker::def(L, "cpp_func", cpp_func);
+//
+//	lua_tinker::dofile(L, "../lua/sample1.lua");
+//
+//	int result = lua_tinker::call<int>(L, "lua_func", 3, 4);
+//
+//	printf("lua_func(3,4) = %d\n", result);
+//
+//	lua_close(L);
+//
+//	system("pause");
+//
+//	return 0;
+//}
 
-extern "C"
-{
-#include "lua.h"
-#include "lualib.h"
-#include "lauxlib.h"
-}
-
-
-#include "lua_tinker.h"
-
-int cpp_func(int arg1, int arg2)
-{
-	return arg1 + arg2;
-}
-
-int main()
-{
-	lua_State* L = lua_open();
-
-	luaopen_base(L);
-
-	lua_tinker::def(L, "cpp_func", cpp_func);
-
-	lua_tinker::dofile(L, "../lua/sample1.lua");
-
-	int result = lua_tinker::call<int>(L, "lua_func", 3, 4);
-
-	printf("lua_func(3,4) = %d\n", result);
-
-	lua_close(L);
-
-	system("pause");
-
-	return 0;
-}
-
-//sample2
+//sample2 global varible
 //#include <iostream>
 //
 //extern "C" 
@@ -65,7 +65,7 @@ int main()
 //	int * def= lua_tinker::get<int *>(L, "cpp_int_ptr");
 //	printf("abc = %d,def=%d \n",*abc ,*def);
 //
-//	lua_tinker::dofile(L, "../lua/sample2.lua");
+//	lua_tinker::dofile(L, "lua/sample2.lua");
 //
 //	int lua_int = lua_tinker::get<int>(L, "lua_int");
 //
@@ -80,7 +80,8 @@ int main()
 //	return 0;
 //}
 
-//sample3
+//sample3 class inherit
+//#include <iostream>
 //extern "C"
 //{
 //#include "lua.h"
@@ -93,7 +94,7 @@ int main()
 //
 //struct TestA
 //{
-//	int a = 0;
+//	int a;
 //};
 //
 //struct A
@@ -190,14 +191,17 @@ int main()
 //
 //	lua_tinker::set(L, "g_test", &g_test);
 //
-//	lua_tinker::dofile(L, "sample3.lua");
+//	lua_tinker::dofile(L, "lua/sample3.lua");
 //
 //	lua_close(L);
+//
+//	system("pause");
 //
 //	return 0;
 //}
 
-//sample4
+//sample4 
+//#include <iostream>
 //extern "C" 
 //{
 //#include "lua.h"
@@ -223,7 +227,7 @@ int main()
 //
 //	inside.set("value", 2);
 //
-//	lua_tinker::dofile(L, "sample4.lua");
+//	lua_tinker::dofile(L, "lua/sample4.lua");
 //
 //	const char* test = haha.get<const char*>("test");
 //	printf("haha.test = %s\n", test);
@@ -239,10 +243,13 @@ int main()
 //
 //	lua_close(L);
 //
+//	system("pause");
+//
 //	return 0;
 //}
 
 // sample5.cpp : Defines the entry point for the console application.
+//#include <iostream>
 //extern "C" 
 //{
 //#include "lua.h"
@@ -271,7 +278,7 @@ int main()
 //	printf("%s\n","-------------------------- stack after push '1'");
 //	lua_tinker::enum_stack(L);
 //
-//	lua_tinker::dofile(L, "sample5.lua");
+//	lua_tinker::dofile(L, "lua/sample5.lua");
 //
 //	printf("%s\n","-------------------------- calling test_error()");
 //	lua_tinker::call<void>(L, "test_error");
@@ -288,11 +295,13 @@ int main()
 //
 //	lua_close(L);
 //
+//	system("pause");
+//
 //	return 0;
 //}
-//
 
-// sample6.cpp
+// sample6.cpp coroutine
+//#include <iostream>
 //extern "C"
 //{
 //#include "lua.h"
@@ -348,7 +357,7 @@ int main()
 //	TestClass g_test;
 //	lua_tinker::set(L, "g_test", &g_test);
 //
-//	lua_tinker::dofile(L, "sample6.lua");
+//	lua_tinker::dofile(L, "lua/sample6.lua");
 //
 //	lua_State *L1 = lua_newthread(L);
 //	lua_pushstring(L1, "ThreadTest");
@@ -377,11 +386,14 @@ int main()
 //
 //	lua_close(L);
 //
+//	system("pause");
+//
 //	return 0;
 //}
-//
+
 
 // sample7.cpp 
+//#include <iostream>
 //extern "C"
 //{
 //#include "lua.h"
@@ -430,7 +442,7 @@ int main()
 //
 //	lua_tinker::set<TestA &>(L, "ref_a", ref_a);
 //
-//	lua_tinker::dofile(L, "sample7.lua");
+//	lua_tinker::dofile(L, "lua/sample7.lua");
 //
 //	printf("ptr_a->a_ = %d\n", ptr_a->a_);
 //	printf("val_a.a_ = %d\n", val_a.a_);
@@ -438,119 +450,124 @@ int main()
 //
 //	lua_close(L);
 //
+//	system("pause");
+//
 //	return 0;
 //}
-//
+
 
 // sample8.cpp
-//extern "C"
-//{
-//#include "lua.h"
-//#include "lualib.h"
-//#include "lauxlib.h"
-//};
-//
-//#include "lua_tinker.h"
-//
-//
-//struct TestA
-//{
-//	int a = 0;
-//};
-//
-//struct A
-//{
-//	A(int v) :
-//value(v) 
-//{
-//}
-//int value;
-//};
-//
-//struct base
-//{
-//	base() {}
-//
-//	const char *is_base()
-//	{
-//		return "this is base";
-//	}
-//};
-//
-//class test : public base
-//{
-//public:
-//	test(int val) : _test(val) {}
-//	~test() {}
-//
-//	const char *is_test()
-//	{
-//		return "this is test";
-//	}
-//
-//	void ret_void()
-//	{
-//	}
-//
-//	int ret_int()
-//	{
-//		return _test;
-//	}
-//	int ret_mul(int m) const
-//	{
-//		return _test * m;
-//	}
-//	A get()
-//	{
-//		return A(_test);
-//	}
-//	void set(A a)
-//	{
-//		_test = a.value;
-//	}
-//
-//	int _test;
-//
-//	TestA _testa;
-//};
-//
-//test g_test(11);
-//
-//int main()
-//{
-//	lua_State *L = lua_open();
-//	luaopen_base(L);
-//	luaopen_string(L);
-//
-//	lua_tinker::class_add<TestA>(L, "TestA");
-//	lua_tinker::class_con<TestA>(L, lua_tinker::constructor<TestA>);
-//
-//	lua_tinker::class_add<base>(L, "base");
-//
-//	lua_tinker::class_def<base>(L, "is_base", &base::is_base);
-//
-//	lua_tinker::class_add<test>(L, "test");
-//
-//	lua_tinker::class_inh<test, base>(L);
-//
-//	lua_tinker::class_con<test>(L, lua_tinker::constructor<test, int>);
-//
-//	lua_tinker::class_def<test>(L, "is_test", &test::is_test);
-//	lua_tinker::class_def<test>(L, "ret_void", &test::ret_void);
-//	lua_tinker::class_def<test>(L, "ret_int", &test::ret_int);
-//	lua_tinker::class_def<test>(L, "ret_mul", &test::ret_mul);
-//	lua_tinker::class_def<test>(L, "get", &test::get);
-//	lua_tinker::class_def<test>(L, "set", &test::set);
-//	lua_tinker::class_mem<test>(L, "_test", &test::_test);
-//	lua_tinker::class_mem<test>(L, "_testa", &test::_testa);
-//
-//	lua_tinker::set(L, "g_test", &g_test);
-//
-//	lua_tinker::dofile(L, "sample3.lua");
-//
-//	lua_close(L);
-//
-//	return 0;
-//}
+#include <iostream>
+extern "C"
+{
+#include "lua.h"
+#include "lualib.h"
+#include "lauxlib.h"
+};
+
+#include "lua_tinker.h"
+
+
+struct TestA
+{
+	int a;
+};
+
+struct A
+{
+	A(int v) :
+value(v) 
+{
+}
+int value;
+};
+
+struct base
+{
+	base() {}
+
+	const char *is_base()
+	{
+		return "this is base";
+	}
+};
+
+class test : public base
+{
+public:
+	test(int val) : _test(val) {}
+	~test() {}
+
+	const char *is_test()
+	{
+		return "this is test";
+	}
+
+	void ret_void()
+	{
+	}
+
+	int ret_int()
+	{
+		return _test;
+	}
+	int ret_mul(int m) const
+	{
+		return _test * m;
+	}
+	A get()
+	{
+		return A(_test);
+	}
+	void set(A a)
+	{
+		_test = a.value;
+	}
+
+	int _test;
+
+	TestA _testa;
+};
+
+test g_test(11);
+
+int main()
+{
+	lua_State *L = lua_open();
+	luaopen_base(L);
+	luaopen_string(L);
+
+	lua_tinker::class_add<TestA>(L, "TestA");
+	lua_tinker::class_con<TestA>(L, lua_tinker::constructor<TestA>);
+
+	lua_tinker::class_add<base>(L, "base");
+
+	lua_tinker::class_def<base>(L, "is_base", &base::is_base);
+
+	lua_tinker::class_add<test>(L, "test");
+
+	lua_tinker::class_inh<test, base>(L);
+
+	lua_tinker::class_con<test>(L, lua_tinker::constructor<test, int>);
+
+	lua_tinker::class_def<test>(L, "is_test", &test::is_test);
+	lua_tinker::class_def<test>(L, "ret_void", &test::ret_void);
+	lua_tinker::class_def<test>(L, "ret_int", &test::ret_int);
+	lua_tinker::class_def<test>(L, "ret_mul", &test::ret_mul);
+	lua_tinker::class_def<test>(L, "get", &test::get);
+	lua_tinker::class_def<test>(L, "set", &test::set);
+	lua_tinker::class_mem<test>(L, "_test", &test::_test);
+	lua_tinker::class_mem<test>(L, "_testa", &test::_testa);
+
+	lua_tinker::set(L, "g_test", &g_test);
+
+	lua_tinker::dofile(L, "lua/sample8.lua");
+
+	lua_close(L);
+
+	system("pause");
+
+	return 0;
+}
 
 

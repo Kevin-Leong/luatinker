@@ -126,6 +126,30 @@
 			Name="资源文件"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			<File
+				RelativePath=".\lua\sample1.lua">
+			</File>
+			<File
+				RelativePath=".\lua\sample2.lua">
+			</File>
+			<File
+				RelativePath=".\lua\sample3.lua">
+			</File>
+			<File
+				RelativePath=".\lua\sample4.lua">
+			</File>
+			<File
+				RelativePath=".\lua\sample5.lua">
+			</File>
+			<File
+				RelativePath=".\lua\sample6.lua">
+			</File>
+			<File
+				RelativePath=".\lua\sample7.lua">
+			</File>
+			<File
+				RelativePath=".\lua\sample8.lua">
+			</File>
 		</Filter>
 	</Files>
 	<Globals>
