@@ -1,1 +1,1 @@
-A luatinker sample creaded by vs2003.
+laya test
