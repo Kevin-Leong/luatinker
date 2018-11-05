@@ -1,36 +1,36 @@
-module laya {
-	import Event = Laya.Event;
-	import Loader = Laya.Loader;
-	import Texture = Laya.Texture;
-	import Handler = Laya.Handler;
+// module laya {
+// 	import Event = Laya.Event;
+// 	import Loader = Laya.Loader;
+// 	import Texture = Laya.Texture;
+// 	import Handler = Laya.Handler;
 
-	export class Loader_ProgressAndErrorHandle {
+// 	export class Loader_ProgressAndErrorHandle {
 
-		constructor() {
-			Laya.init(550, 400);
+// 		constructor() {
+// 			Laya.init(550, 400);
 
-			// 无加载失败重试
-			Laya.loader.retryNum = 0;
+// 			// 无加载失败重试
+// 			Laya.loader.retryNum = 0;
 
-			var urls: Array<string> = ["do not exist", "../laya/res/fighter/fighter.png", "../laya/res/legend/map.jpg"];
-			Laya.loader.load(urls, Handler.create(this, this.onAssetLoaded), Handler.create(this, this.onLoading, null, false), Loader.TEXT);
+// 			var urls: Array<string> = ["do not exist", "../laya/res/fighter/fighter.png", "../laya/res/legend/map.jpg"];
+// 			Laya.loader.load(urls, Handler.create(this, this.onAssetLoaded), Handler.create(this, this.onLoading, null, false), Loader.TEXT);
 
-			// 侦听加载失败
-			Laya.loader.on(Event.ERROR, this, this.onError);
-		}
+// 			// 侦听加载失败
+// 			Laya.loader.on(Event.ERROR, this, this.onError);
+// 		}
 
-		private onAssetLoaded(texture: Texture): void {
-			// 使用texture
-			console.log("加载结束");
-		}
+// 		private onAssetLoaded(texture: Texture): void {
+// 			// 使用texture
+// 			console.log("加载结束");
+// 		}
 
-		// 加载进度侦听器
-		private onLoading(progress: number): void {
-			console.log("加载进度: " + progress);
-		}
+// 		// 加载进度侦听器
+// 		private onLoading(progress: number): void {
+// 			console.log("加载进度: " + progress);
+// 		}
 
-		private onError(err: String): void {
-			console.log("加载失败: " + err);
-		}
-	}
-} new laya.Loader_ProgressAndErrorHandle();
+// 		private onError(err: String): void {
+// 			console.log("加载失败: " + err);
+// 		}
+// 	}
+// } new laya.Loader_ProgressAndErrorHandle();
