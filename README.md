@@ -1,2 +1,3 @@
 laya test
-uint 
+
+uint test
