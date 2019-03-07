@@ -1,3 +1,3 @@
-#define REDIS_GIT_SHA1 "c33cb493"
-#define REDIS_GIT_DIRTY "0"
-#define REDIS_BUILD_ID "loso-1551926251"
+#define REDIS_GIT_SHA1 "75f47cb5"
+#define REDIS_GIT_DIRTY "256729"
+#define REDIS_BUILD_ID "loso-1551942559"

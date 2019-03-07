@@ -136,9 +136,10 @@ start_server {tags {"hll"}} {
         r pfcount hll
     } {5}
 
-    test {PFCOUNT multiple-keys merge returns cardinality of union #1} {
+    test {PFCOUNT multiple-keys merge returns cardinality of union} {
         r del hll1 hll2 hll3
         for {set x 1} {$x < 10000} {incr x} {
+            # Force dense representation of hll2
             r pfadd hll1 "foo-$x"
             r pfadd hll2 "bar-$x"
             r pfadd hll3 "zap-$x"
@@ -150,36 +151,9 @@ start_server {tags {"hll"}} {
         }
     }
 
-    test {PFCOUNT multiple-keys merge returns cardinality of union #2} {
-        r del hll1 hll2 hll3
-        set elements {}
-        for {set x 1} {$x < 10000} {incr x} {
-            for {set j 1} {$j <= 3} {incr j} {
-                set rint [randomInt 20000]
-                r pfadd hll$j $rint
-                lappend elements $rint
-            }
-        }
-        set realcard [llength [lsort -unique $elements]]
-        set card [r pfcount hll1 hll2 hll3]
-        set err [expr {abs($card-$realcard)}]
-        assert {$err < (double($card)/100)*5}
-    }
-
     test {PFDEBUG GETREG returns the HyperLogLog raw registers} {
         r del hll
         r pfadd hll 1 2 3
         llength [r pfdebug getreg hll]
     } {16384}
-
-    test {PFADD / PFCOUNT cache invalidation works} {
-        r del hll
-        r pfadd hll a b c
-        r pfcount hll
-        assert {[r getrange hll 15 15] eq "\x00"}
-        r pfadd hll a b c
-        assert {[r getrange hll 15 15] eq "\x00"}
-        r pfadd hll 1 2 3
-        assert {[r getrange hll 15 15] eq "\x80"}
-    }
 }
