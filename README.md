@@ -1,3 +1,3 @@
 # redising
-*redis注释
-*redis改编
+* redis注释
+* redis改编
