@@ -7,4 +7,6 @@
 
   https://www.cnblogs.com/losophy/p/10489415.html
 * 多机数据库的实现
+
+  https://www.cnblogs.com/losophy/p/10489418.html
 * 独立功能的实现
