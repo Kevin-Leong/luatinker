@@ -1,21 +1,38 @@
 <div align="center">
-📘 Summary
+<a href="https://github.com/huihut/interview">📘 Summary</a>
 &emsp;&emsp; | &emsp;&emsp;
-<a href="https://github.com/huihut/interview/blob/master/README_Details.md">📖 Details</a>
+📖 Details
 </div> 
 <br>
 
-<b><details><summary>💡 关于</summary></b>
+💡 右侧目录支持方式：
 
-📚 本仓库是面向 C/C++ 方向校招求职者、初学者的基础知识总结，包括语言、程序库、数据结构、算法、系统、网络等知识及面试、内推等信息。
+* 语雀的镜像仓库：[C/C++ 面试基础知识总结](https://www.yuque.com/huihut/interview/readme)
+* Github + TOC：[jawil/GayHub TOC 导航](https://github.com/jawil/GayHub)
 
-📘 Summary 页面是目录收起，📖 Details 页面是全文展开，适用于不同场景和阅读习惯。
+## 📑 目录
 
-🙏 仓库内容如有错误或改进欢迎 issue 或 pr，建议或讨论可在 [#12](https://github.com/huihut/interview/issues/12) 提出。由于本人水平有限，仓库中的知识点有来自本人原创、读书笔记、书籍、博文等，非原创均已标明出处，如有遗漏，请 issue 提出。本仓库遵循 CC BY-NC-SA 4.0 协议，转载请注明出处。
+* [➕ C/C++](#-cc)
+* [📦 STL](#-stl)
+* [〽️ 数据结构](#️-数据结构)
+* [⚡️ 算法](#️-算法)
+* [❓ Problems](#-problems)
+* [💻 操作系统](#-操作系统)
+* [☁️ 计算机网络](#️-计算机网络)
+* [🌩 网络编程](#-网络编程)
+* [💾 数据库](#-数据库)
+* [📏 设计模式](#-设计模式)
+* [⚙️ 链接装载库](#️-链接装载库)
+* [📚 书籍](#-书籍)
+* [💯 复习刷题网站](#-复习刷题网站)
+* [🔱 C/C++ 发展方向](#-cc-发展方向)
+* [📆 招聘时间岗位](#-招聘时间岗位)
+* [📝 面试题目经验](#-面试题目经验)
+* [👍 内推](#-内推)
+* [👬 贡献者](#-贡献者)
+* [📜 License](#-license)
 
-</details>
-
-<b><details><summary>➕ C/C++</summary></b>
+## ➕ C/C++
 
 ### const
 
@@ -89,7 +106,7 @@ int* const function7();     // 返回一个指向变量的常指针，使用：i
 ### this 指针
 
 1. `this` 指针是一个隐含于每一个非静态成员函数中的特殊指针。它指向调用该成员函数的那个对象。
-2. 当对一个对象调用成员函数时，编译程序先将对象的地址赋给 `this` 指针，然后调用成员函数，每次成员函数存取数据成员时，都隐含使用 `this` 指针。
+2. 当对一个对象调用成员函数时，编译程序先将对象的地址赋给 `this` 指针，然后调用成员函数，每次成员函数存取数据成员时，都隐式使用 `this` 指针。
 3. 当一个成员函数被调用时，自动向它传递一个隐含的参数，该参数是一个指向这个成员函数所在的对象的指针。
 4. `this` 指针被隐含地声明为: `ClassName *const this`，这意味着不能给 `this` 指针赋值；在 `ClassName` 类的 `const` 成员函数中，`this` 指针的类型为：`const ClassName* const`，这说明不能对 `this` 指针所指向的这种对象是不可修改的（即不能对这种对象的数据成员进行赋值操作）；
 5. `this` 并不是一个常规变量，而是个右值，所以不能取得 `this` 的地址（不能 `&this`）。
@@ -1253,9 +1270,7 @@ class doSomething(Flyable *obj)                 // 做些事情
 * [Bjarne Stroustrup 的常见问题](http://www.stroustrup.com/bs_faq.html)
 * [Bjarne Stroustrup 的 C++ 风格和技巧常见问题](http://www.stroustrup.com/bs_faq2.html)
 
-</details>
-
-<b><details><summary>📦 STL</summary></b>
+## 📦 STL
 
 ### STL 索引
 
@@ -1288,9 +1303,7 @@ hash_multimap|哈希表|插入、删除、查找 O(1) 最差 O(n)|无序|可重�
 [find](http://www.cplusplus.com/reference/algorithm/find/)|顺序查找|O(n)|可重复
 [sort](https://github.com/gcc-mirror/gcc/blob/master/libstdc++-v3/include/bits/stl_algo.h#L4808)|[内省排序](https://en.wikipedia.org/wiki/Introsort)|O(n*log<sub>2</sub>n)|可重复
 
-</details>
-
-<b><details><summary>〽️ 数据结构</summary></b>
+## 〽️ 数据结构
 
 ### 顺序结构
 
@@ -1720,9 +1733,7 @@ typedef struct BiTNode
 * 三维计算机图形
 * 最邻近搜索
 
-</details>
-
-<b><details><summary>⚡️ 算法</summary></b>
+## ⚡️ 算法
 
 ### 排序
 
@@ -1774,9 +1785,7 @@ B树/B+树 |O(log<sub>2</sub>n) |   |
 [动态规划](https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)|通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法，适用于有重叠子问题和最优子结构性质的问题|[背包问题](https://github.com/huihut/interview/tree/master/Problems/KnapsackProblem)、斐波那契数列
 [贪心法](https://zh.wikipedia.org/wiki/%E8%B4%AA%E5%BF%83%E6%B3%95)|一种在每一步选择中都采取在当前状态下最好或最优（即最有利）的选择，从而希望导致结果是最好或最优的算法|旅行推销员问题（最短路径问题）、最小生成树、哈夫曼编码
 
-</details>
-
-<b><details><summary>❓ Problems</summary></b>
+## ❓ Problems
 
 ### Single Problem
 
@@ -1805,9 +1814,7 @@ B树/B+树 |O(log<sub>2</sub>n) |   |
 
 * [牛客网 . 在线编程专题](https://www.nowcoder.com/activity/oj)
 
-</details>
-
-<b><details><summary>💻 操作系统</summary></b>
+## 💻 操作系统
 
 ### 进程与线程
 
@@ -2044,9 +2051,7 @@ int main()
 * 最近最久未使用（LRU）算法
 * 时钟（Clock）置换算法
 
-</details>
-
-<b><details><summary>☁️ 计算机网络</summary></b>
+## ☁️ 计算机网络
 
 > 本节部分知识点来自《计算机网络（第 7 版）》
 
@@ -2457,9 +2462,7 @@ TRACE | 回显服务器收到的请求，主要用于测试或诊断
     * 用于内部网络管理员作为对所有电脑作中央管理的手段
 * SNMP（Simple Network Management Protocol，简单网络管理协议）构成了互联网工程工作小组（IETF，Internet Engineering Task Force）定义的 Internet 协议族的一部分。该协议能够支持网络管理系统，用以监测连接到网络上的设备是否有任何引起管理上关注的情况。
 
-</details>
-
-<b><details><summary>🌩 网络编程</summary></b>
+## 🌩 网络编程
 
 ### Socket
 
@@ -2524,9 +2527,7 @@ ssize_t write(int fd, const void *buf, size_t count);
 
 这样每个方向上都有一个 FIN 和 ACK。
 
-</details>
-
-<b><details><summary>💾 数据库</summary></b>
+## 💾 数据库
 
 > 本节部分知识点来自《数据库系统概论（第 5 版）》
 
@@ -2651,9 +2652,7 @@ ssize_t write(int fd, const void *buf, size_t count);
         * 解除：撤销处理死锁代价最小的事务，并释放此事务的所有的锁，使其他事务得以继续运行下去。
 * 可串行化调度：多个事务的并发执行是正确的，当且仅当其结果与按某一次序串行地执行这些事务时的结果相同。可串行性时并发事务正确调度的准则。
 
-</details>
-
-<b><details><summary>📏 设计模式</summary></b>
+## 📏 设计模式
 
 > 各大设计模式例子参考：[CSDN专栏 . C++ 设计模式](https://blog.csdn.net/column/details/15392.html) 系列博文
 
@@ -2688,9 +2687,7 @@ ssize_t write(int fd, const void *buf, size_t count);
 * 迪米特法则（LoD，Law of Demeter）
 * 开放封闭原则（OCP，Open Close Principle）
 
-</details>
-
-<b><details><summary>⚙️ 链接装载库</summary></b>
+## ⚙️ 链接装载库
 
 > 本节部分知识点来自《程序员的自我修养——链接装载库》
 
@@ -3259,9 +3256,7 @@ int main( void )
 * 变长参数（stdarg.h）
 * 非局部跳转（setjmp.h）
 
-</details>
-
-<b><details><summary>📚 书籍</summary></b>
+## 📚 书籍
 
 > [huihut/CS-Books](https://github.com/huihut/CS-Books)：📚 Computer Science Books 计算机技术类书籍
 
@@ -3295,9 +3290,7 @@ int main( void )
 
 * 《程序员的自我修养》
 
-</details>
-
-<b><details><summary>🔱 C/C++ 发展方向</summary></b>
+## 🔱 C/C++ 发展方向
 
 > C/C++ 发展方向甚广，包括不限于以下方向， 以下列举一些大厂校招岗位要求。
 
@@ -3383,9 +3376,7 @@ int main( void )
 * 较强的算法实现能力，熟练掌握 C/C++ 编程，熟悉 Shell/Python/Matlab 至少一种编程语言；
 * 在计算机视觉、模式识别等学术会议或者期刊上发表论文、相关国际比赛获奖、及有相关专利者优先。
 
-</details>
-
-<b><details><summary>💯 复习刷题网站</summary></b>
+## 💯 复习刷题网站
 
 * [cplusplus](http://www.cplusplus.com/)
 * [cppreference](https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5)
@@ -3394,17 +3385,13 @@ int main( void )
 * [lintcode](https://www.lintcode.com/)
 * [nowcoder](https://www.nowcoder.net/)
 
-</details>
-
-<b><details><summary>📆 招聘时间岗位</summary></b>
+## 📆 招聘时间岗位
 
 * [牛客网 . 2020届实习 | 2019名企实习直推专场](https://www.nowcoder.com/activity/2019recommand/index)
 * [牛客网 . 2019届补招｜互联网名企2019应届生补招专场合集](https://www.nowcoder.com/discuss/139360)
 * [牛客网 . 2019届校招 | 2019 IT名企校招指南](https://www.nowcoder.com/activity/campus2019)
 
-</details>
-
-<b><details><summary>📝 面试题目经验</summary></b>
+## 📝 面试题目经验
 
 * [牛客网 . 2019校招面经大汇总！【每日更新中】](https://www.nowcoder.com/discuss/90907)
 * [牛客网 . 2019校招技术类岗位面经汇总【技术类】](https://www.nowcoder.com/discuss/146655)
@@ -3423,26 +3410,18 @@ int main( void )
 * [cnblogs . 常见C++面试题及基本知识点总结（一）](https://www.cnblogs.com/LUO77/p/5771237.html)
 * [segmentfault . C++常见面试问题总结](https://segmentfault.com/a/1190000003745529)
 
-</details>
-
-<b><details><summary>👍 内推</summary></b>
+## 👍 内推
 
 * <a href="Recommend/虎牙直播.md"><img src="Recommend/images/huya-logo.png" height="50"></a>
 
-</details>
-
-<b><details><summary>👬 贡献者</summary></b>
+## 👬 贡献者
 
 包括勘误的 Issue、PR，排序按照贡献时间。
 
 [tamarous](https://github.com/tamarous)、[i0Ek3](https://github.com/i0Ek3)、[sniper00](https://github.com/sniper00)、[blackhorse001](https://github.com/blackhorse001)、[houbaron](https://github.com/houbaron)、[Qouan](https://github.com/Qouan)、[2329408386](https://github.com/2329408386)、[FlyingfishMORE](https://github.com/FlyingfishMORE)、[Ematrix163](https://github.com/Ematrix163)、[ReturnZero23](https://github.com/ReturnZero23)、[kelvinkuo](https://github.com/kelvinkuo)、[henryace](https://github.com/henryace)、[xinghun](https://github.com/xinghun)、[maokelong](https://github.com/maokelong)、[easyYao](https://github.com/easyYao)、[FengZiYjun](https://github.com/FengZiYjun)、[shangjiaxuan](https://github.com/shangjiaxuan)、[kwongtailau](https://github.com/kwongtailau)、[asky991](https://github.com/asky991)、[traviszeng](https://github.com/traviszeng)、[kele1997](https://github.com/kele1997)、[hxdnshx](https://github.com/hxdnshx)、[a74731248](https://github.com/a74731248)、[qvjp](https://github.com/qvjp)
 
-</details>
-
-<b><details><summary>📜 License</summary></b>
+## 📜 License
 
 本仓库遵循 CC BY-NC-SA 4.0（署名 - 非商业性使用） 协议，转载请注明出处。
 
 [![CC BY-NC-SA 4.0](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](LICENSE)
-
-</details>
