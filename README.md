@@ -1,5 +1,5 @@
 <div align="center">
- About
+ about
 &emsp;&emsp; | &emsp;&emsp;
 <a href="https://github.com/losophy/algorithm/blob/master/README.md"> algorithm</a>
 &emsp;&emsp; | &emsp;&emsp;
