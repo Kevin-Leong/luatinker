@@ -1,7 +1,9 @@
 <div align="center">
-📘 Summary
+ Summary
 &emsp;&emsp; | &emsp;&emsp;
-<a href="https://github.com/losophy/raindrop/blob/master/README_Details.md">📖 Details</a>
+<a href="https://github.com/losophy/raindrop/blob/master/README_algorithm.md"> algorithm</a>
+&emsp;&emsp; | &emsp;&emsp;
+<a href="https://github.com/losophy/raindrop/blob/master/README_architecture.md"> architecture</a>
 </div> 
 <br>
 
@@ -11,6 +13,4 @@ Some acticles
 
 </details>
 
-<b><details><summary>➕ C/C++</summary></b>
 
-</details>
