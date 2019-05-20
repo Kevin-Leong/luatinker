@@ -1,5 +1,5 @@
 <div align="center">
- Summary
+ About
 &emsp;&emsp; | &emsp;&emsp;
 <a href="https://github.com/losophy/raindrop/blob/master/README_algorithm.md"> algorithm</a>
 &emsp;&emsp; | &emsp;&emsp;
@@ -7,7 +7,7 @@
 </div> 
 <br>
 
-<b><details><summary>💡 关于</summary></b>
+<b><details><summary>About</summary></b>
 
 Some acticles
 
