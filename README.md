@@ -1,7 +1,7 @@
 <div align="center">
 📘 Summary
 &emsp;&emsp; | &emsp;&emsp;
-<a href="https://github.com/huihut/interview/blob/master/README_Details.md">📖 Details</a>
+<a href="https://github.com/losophy/raindrop/blob/master/README_Details.md">📖 Details</a>
 </div> 
 <br>
 
