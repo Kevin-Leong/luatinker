@@ -1,3 +1,11 @@
+<div align="right">
+<a href="https://github.com/losophy/raindrop/blob/master/README.md">  about</a>
+</div> 
+
+# 5.0.4 
+
+https://github.com/losophy/redis
+
 # redising
 阅读redis源码可以分四步：
 * 数据结构与对象
