@@ -5,7 +5,7 @@
 &emsp;&emsp; | &emsp;&emsp;
 <a href="https://github.com/losophy/cc11/blob/master/README.md"> c++</a>
 &emsp;&emsp; | &emsp;&emsp;
-<a href="https://github.com/losophy/cc11/blob/master/README.md"> redis</a>
+<a href="https://github.com/losophy/raindrop/blob/master/content/README_redis.md"> redis</a>
 </div> 
 <br>
 
