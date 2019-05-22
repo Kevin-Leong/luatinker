@@ -7,7 +7,7 @@
 &emsp;&emsp; | &emsp;&emsp;
 <a href="https://github.com/losophy/raindrop/blob/master/content/README_redis.md"> redis</a>
  &emsp;&emsp; | &emsp;&emsp;
-<a href="https://github.com/losophy/raindrop/blob/master/content/README_redis.md"> kit</a>
+<a href="https://github.com/losophy/raindrop/blob/master/content/README_kit.md"> kit</a>
 </div> 
 <br>
 
