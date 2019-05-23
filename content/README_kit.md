@@ -18,7 +18,12 @@ Some acticles
 
 <b><details><summary>gdb</summary></b>
 
-Some acticles
+cmd:gdb
+gdb:file yourpram
+
+* set parameter<br>
+set args(e.g. set args 10 20 30 40 50)<br>
+show args<br>
 
 </details>
 
