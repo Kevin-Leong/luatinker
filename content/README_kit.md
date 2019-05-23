@@ -26,7 +26,7 @@ set args(e.g. set args 10 20 30 40 50)<br>
 show args<br>
 
 * start<br>
-UI interface ctrl+X+A
+UI interface(TUI mode) ctrl+X+A
 
 </details>
 
