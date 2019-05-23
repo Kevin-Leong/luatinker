@@ -11,10 +11,10 @@
 </div> 
 <br>
 
-<b><details><summary>About</summary></b>
-
+<div>
+About<br>
 Here is my English Bolg.
 
-</details>
+<div>
 
 
