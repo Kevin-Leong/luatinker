@@ -22,3 +22,26 @@ Some acticles
 
 </details>
 
+<b><details><summary>git</summary></b>
+
+Some acticles
+
+</details>
+
+<b><details><summary>wc</summary></b>
+
+Some acticles
+
+</details>
+
+<b><details><summary>netstat</summary></b>
+
+Some acticles
+
+</details>
+
+<b><details><summary>pstack</summary></b>
+
+Some acticles
+
+</details>
