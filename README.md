@@ -13,7 +13,7 @@
 
 <b><details><summary>About</summary></b>
 
-Some acticles
+Here is my English Bolg.
 
 </details>
 
