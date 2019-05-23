@@ -18,7 +18,7 @@ Some acticles
 
 <b><details><summary>gdb</summary></b>
 
-cmd:gdb
+cmd:gdb<br>
 gdb:file yourpram
 
 * set parameter<br>
