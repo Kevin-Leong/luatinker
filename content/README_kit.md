@@ -25,6 +25,9 @@ gdb:file yourpram
 set args(e.g. set args 10 20 30 40 50)<br>
 show args<br>
 
+* start<br>
+UI interface ctrl+X+A
+
 </details>
 
 <b><details><summary>git</summary></b>
