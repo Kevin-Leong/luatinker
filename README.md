@@ -12,7 +12,6 @@
 <br>
 
 <div>
-About<br>
 Here is my English Bolg.
 
 <div>
