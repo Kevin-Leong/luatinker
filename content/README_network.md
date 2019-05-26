@@ -11,4 +11,10 @@ Ping operates by sending Internet Control Message Protocol (ICMP) echo request p
 
 </details>
 
+<b><details><summary>traceX</summary></b>
+
+In computing, traceroute and tracert are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network. 
+
+</details>
+
 
