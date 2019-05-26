@@ -2,19 +2,13 @@
 <a href="https://github.com/losophy/raindrop/blob/master/README.md">  about</a>
 </div> 
 
-# 5.0.4 
+<br>
 
-https://github.com/losophy/redis
+<b><details><summary>ping</summary></b>
 
-# redising
-阅读redis源码可以分四步：
-* 数据结构与对象
+Ping measures the round-trip time for messages sent from the originating host to a destination computer that are echoed back to the source.<br>
+Ping operates by sending Internet Control Message Protocol (ICMP) echo request packets to the target host and waiting for an ICMP echo reply. 
 
-  https://www.cnblogs.com/losophy/p/9539648.html
-* 单机数据库的实现
+</details>
 
-  https://www.cnblogs.com/losophy/p/10489415.html
-* 多机数据库的实现
 
-  https://www.cnblogs.com/losophy/p/10489418.html
-* 独立功能的实现
