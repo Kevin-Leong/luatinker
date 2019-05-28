@@ -17,7 +17,7 @@
 <br>
 
 <div>
-Here is my English Bolg.
+Think, act like local people, no just speak.
 
 <div>
 
