@@ -57,3 +57,11 @@ Some acticles
 Some acticles
 
 </details>
+
+<b><details><summary>os</summary></b>
+
+os information<br>
+lsb_release -a<br>
+uname -a
+
+</details>
