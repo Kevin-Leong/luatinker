@@ -21,9 +21,13 @@ Some acticles
 cmd:gdb<br>
 gdb:file yourpram
 
+* save commands history<br>
+echo 'set history save on' >> ~/.gdbinit && chmod 600 ~/.gdbinit<br>
+gdb$ show history
+
 * set parameter<br>
-set args(e.g. set args 10 20 30 40 50)<br>
-show args<br>
+gdb$ set args(e.g. set args 10 20 30 40 50)<br>
+gdb$ show args<br>
 
 * start<br>
 UI interface(TUI mode) ctrl+X+A
