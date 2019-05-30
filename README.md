@@ -12,6 +12,8 @@
 <a href="https://github.com/losophy/raindrop/blob/master/content/README_network.md"> network</a>
 &emsp;&emsp; | &emsp;&emsp;
 <a href="https://github.com/losophy/raindrop/blob/master/content/README_redis.md"> redis</a>
+ &emsp;&emsp; | &emsp;&emsp;
+<a href="https://github.com/losophy/skynet/blob/master/doc/README_skynet.md"> skynet</a>
 
 </div> 
 <br>
