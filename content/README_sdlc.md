@@ -4,6 +4,8 @@
 
 <br>
 
+## ![sdlc image](https://www.guru99.com/images/1/080118_0641_SDLCSoftwar1.png)
+
 <b><details><summary>deploy</summary></b>
 
 * Docker<br>
