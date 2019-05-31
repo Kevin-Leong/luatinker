@@ -19,7 +19,7 @@ Some acticles
 <b><details><summary>gdb</summary></b>
 
 cmd:gdb<br>
-gdb:file yourpram
+gdb$ file yourpram
 
 * save commands history<br>
 echo 'set history save on' >> ~/.gdbinit && chmod 600 ~/.gdbinit<br>
@@ -30,7 +30,17 @@ gdb$ set args(e.g. set args 10 20 30 40 50)<br>
 gdb$ show args<br>
 
 * start<br>
-UI interface(TUI mode) ctrl+X+A
+
+* break<br>
+gdb$ b gdb_test.c:3 <br>
+gdb$ info b
+ 
+ * print<br>
+gdb$ p i<br>
+gdb$ p/x i
+ 
+ * UI interface(TUI mode) <br>
+ctrl+X+A
 
 </details>
 
