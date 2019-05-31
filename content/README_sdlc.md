@@ -4,7 +4,7 @@
 
 <br>
 
-<b><details><summary>vim</summary></b>
+<b><details><summary>deploy</summary></b>
 
 Some acticles
 
