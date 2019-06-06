@@ -57,7 +57,7 @@ Some acticles
 </details>
 
 <b><details><summary>netstat</summary></b>
-We can use netstat to judge the health of the connection.<br>
+# judge the health of the connection
 netstat -anp | grep xxxx<br>
 netstat -anp | grep pid<br>
 
@@ -81,7 +81,7 @@ Some acticles
 
 <b><details><summary>os</summary></b>
 
-os information<br>
+# os information
 lsb_release -a
 ```
 No LSB modules are available.
