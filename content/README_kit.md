@@ -57,8 +57,19 @@ Some acticles
 </details>
 
 <b><details><summary>netstat</summary></b>
+We can use netstat to judge the health of the connection.<br>
+netstat -anp | grep xxxx<br>
+netstat -anp | grep pid<br>
 
-Some acticles
+netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'<br>
+```
+LAST_ACK 5  
+SYN_RECV 30  
+ESTABLISHED 15  
+FIN_WAIT1 51  
+FIN_WAIT2 5  
+TIME_WAIT 10  
+```
 
 </details>
 
