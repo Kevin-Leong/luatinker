@@ -82,7 +82,16 @@ Some acticles
 <b><details><summary>os</summary></b>
 
 os information<br>
-lsb_release -a<br>
+lsb_release -a
+```
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 16.04.5 LTS
+Release:        16.04
+Codename:       xenial
+```
 uname -a
-
+```
+Linux coding.ide 3.10.107-1-tlinux2_kvm_guest-0046.cd.nosign #1 SMP Wed Jan 31 15:25:12 CST 2018 x86_64 x86_64 x86_64 GNU/Linux
+```
 </details>
