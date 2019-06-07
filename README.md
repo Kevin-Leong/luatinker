@@ -21,8 +21,9 @@
 <br>
 
 <div>
-Think, act like local people, no just speak.
-
+Think, act like local people, no just speak.<br>
+My old blog
+https://www.cnblogs.com/losophy
 <div>
 
 
