@@ -12,7 +12,10 @@ Some acticles
 
 <b><details><summary>grep</summary></b>
 
-Some acticles
+If you want to know which files contain the content your want, you can use grep.
+```
+grep -rn "hello,world!" *
+```
 
 </details>
 
