@@ -77,8 +77,11 @@ TIME_WAIT 10
 </details>
 
 <b><details><summary>pstack</summary></b>
+ print every thread stack 
 
-Some acticles
+```
+pstack $pid
+```
 
 </details>
 
