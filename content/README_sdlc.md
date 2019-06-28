@@ -15,7 +15,7 @@ Docker is a set of coupled software-as-a-service and platform-as-a-service produ
 </details>
 
 
-<b><details><summary>deploy</summary></b>
+<b><details><summary>game</summary></b>
 
 meeting->designing proto&config->coding->testing
 
