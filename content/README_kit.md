@@ -48,9 +48,9 @@ ctrl+X+A
 </details>
 
 <b><details><summary>git</summary></b>
-
-Some acticles
-
+```
+git checkout .  #reset all files to the original state
+```
 </details>
 
 <b><details><summary>wc</summary></b>
