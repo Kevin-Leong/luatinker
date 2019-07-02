@@ -7,3 +7,16 @@ https://github.com/losophy/mongo
 
 To build MongoDB, Python 3.7.x is required.<br>
 And Python 3.7 requires openssl >1.0.2.
+
+<b><details><summary>scripts</summary></b>
+some js scripts
+
+```
+db.getCollection('Player').find({})  //select * from player
+
+db.getCollection('Player').find({"checkIn":{"$exists":true}}) //select checkIn from player
+
+db.getCollection('Player').update({},{$unset:{"checkIn":""}},false,true) //update player set checkIn = ""
+```
+
+</details>
