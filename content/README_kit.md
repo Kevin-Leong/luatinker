@@ -51,6 +51,12 @@ ctrl+X+A
 ```
 git checkout .  #reset all files to the original state
 ```
+github
+```
+followers:>10
+language:c++
+location:uk
+```
 </details>
 
 <b><details><summary>wc</summary></b>
