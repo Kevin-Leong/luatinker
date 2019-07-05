@@ -8,6 +8,17 @@ https://github.com/losophy/mongo
 To build MongoDB, Python 3.7.x is required.<br>
 And Python 3.7 requires openssl >1.0.2.
 
+<b><details><summary>start</summary></b>
+some js scripts
+
+```
+sudo mongod --dbpath=/data/db     #serve rup
+
+sudo mongo                        #client up
+```
+
+</details>
+
 <b><details><summary>scripts</summary></b>
 some js scripts
 
