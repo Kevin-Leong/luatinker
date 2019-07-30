@@ -26,7 +26,11 @@ db.getCollection('Player').find({})  //select * from player
 
 db.getCollection('Player').find({"checkIn":{"$exists":true}}) //select checkIn from player
 
+db.getCollection('Player').find({"boss.1001.night":{"$exists":true}}) //select boss.1001.night from player
+
 db.getCollection('Player').update({},{$unset:{"checkIn":""}},false,true) //update player set checkIn = ""
+
+db.getCollection('Player').update({},{$unset:{"boss.1001.night":""}},false,true) //update player set boss.1001.night = ""
 ```
 
 </details>
