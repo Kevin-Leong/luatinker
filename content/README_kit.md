@@ -50,6 +50,7 @@ ctrl+X+A
 <b><details><summary>git</summary></b>
 ```
 git checkout .  #reset all files to the original state
+git clone https://github.com/Wuchenwcf/MyCode.git --depth==1   #just clone last commit
 ```
 github
 ```
