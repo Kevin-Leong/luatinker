@@ -2,9 +2,16 @@
 <a href="https://github.com/losophy/raindrop/blob/master/README.md">  about</a>
 </div> 
 
-<br>
+# System Development Life Cycle
 
-## ![sdlc image](https://www.guru99.com/images/1/080118_0641_SDLCSoftwar1.png)
+![sdlc image](https://www.guru99.com/images/1/080118_0641_SDLCSoftwar1.png)
+
+<b><details><summary>design</summary></b>
+
+* Design Pattern<br>
+https://github.com/losophy/ideas/issues/11
+
+</details>
 
 <b><details><summary>deploy</summary></b>
 
