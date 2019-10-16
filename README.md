@@ -6,6 +6,8 @@
 <a href="https://github.com/losophy/cc11/blob/master/README.md"> c++</a>
 &emsp;&emsp; | &emsp;&emsp;
 <a href="https://github.com/losophy/raindrop/blob/master/content/README_kit.md"> kit</a>
+ &emsp;&emsp; | &emsp;&emsp;
+<a href="https://github.com/losophy/raindrop/blob/master/content/README_lua.md"> lua</a>
 &emsp;&emsp; | &emsp;&emsp;
 <a href="https://github.com/losophy/raindrop/blob/master/content/README_mongodb.md"> mongodb</a>
 &emsp;&emsp; | &emsp;&emsp;
