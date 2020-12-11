@@ -9,7 +9,7 @@
 <b><details><summary>design</summary></b>
 
 * Design Pattern<br>
-https://github.com/losophy/ideas/issues/11
+
 
 </details>
 
