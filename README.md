@@ -20,12 +20,5 @@
 <a href="https://github.com/losophy/raindrop/blob/master/content/README_sdlc.md"> sdlc</a>
 
 </div> 
-<br>
-
-<div>
-Think, act like local people, no just speak.<br><br>
-My old blog<br>
-https://www.cnblogs.com/losophy
-<div>
 
 
